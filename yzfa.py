@@ -10,7 +10,6 @@ class YZF(Enum):
 
 
 stars = "********************"
-computer_choice = int(random.choice("123"))
 
 
 def game():
@@ -19,6 +18,7 @@ def game():
             "Make your choice\n1 for Rock\n2 for Paper\n3 for Scissors:\n"
         )
         player_choice = int(player_choice_input)
+        computer_choice = int(random.choice("123"))
 
     except ValueError:
         print(f"{stars}")
